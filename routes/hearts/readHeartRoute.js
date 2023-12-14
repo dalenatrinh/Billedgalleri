@@ -1,1 +1,1 @@
-// til synkronisering
+// til synkronisering ?

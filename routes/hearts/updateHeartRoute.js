@@ -9,10 +9,8 @@ module.exports = async (req, res) => {
         // Find et eksisterende dokument med imageName og opdater det
         let imgUpdateData = { isActive: reqIsActivated }
 
-         let result = await HeartModal.updateOne({ imageName: reqImageName }, imgUpdateData, { upsert: true, new: true });
+        let result = await HeartModal.updateOne({ imageName: reqImageName }, imgUpdateData, { upsert: true, new: true });
 
-         
-        // await HeartModal.updateOne({ imageName: reqImageName }, imgUpdateData, { upsert: true, new: true });
 
 
     } catch (error) {

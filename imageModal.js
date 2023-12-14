@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
 const imageSchema = new mongoose.Schema({
-    // Other fields can be defined here
     isActive: {
         type: Boolean,
         required: true
@@ -11,6 +10,7 @@ const imageSchema = new mongoose.Schema({
         required: true
     }
 }, {
+    // bliver tilføjet til kollektion på mongo
     collection: "hearts"
 });
 
