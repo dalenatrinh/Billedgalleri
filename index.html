@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BilledGalleri</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon8.png" />
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon7.png" />
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon6.png" />
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon5.png" />
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon4.png" />
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon3.png" />
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon2.png" />
+    <link rel="apple-touch-icon" href="/images/icons/camera-icon1.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+</head>
+
+<body>
+    <main>
+        <!-- Profil øverst til venstre -->
+        <div class="profile">
+            <img src="./images/user.jpg" class="user-icon">
+            <div class="profile-content">
+                <p id="user-name">Username</p>
+                <p id="browser-status">Status</p>
+            </div>
+        </div>
+
+        <!-- Navigation for billedgalleriet -->
+
+        <div>
+            <div class="nav">
+                <p>Show all pictures</p>
+                <p>Liked pictures</p>
+                <p>Needs to be liked</p>
+            </div>
+            <div class="line"></div>
+        </div>
+
+        <div id="image-gallery" class="galleryContainer">
+            <!-- Billederne bliver tilføjet her fra main.js -->
+        </div>
+
+    </main>
+    
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script defer src="/main.js"></script>
+
+</body>
+
+</html>

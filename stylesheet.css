@@ -1,0 +1,65 @@
+.user-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.profile {
+    display: flex;
+}
+
+.profile-content {
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30%;
+}
+
+.line {
+    height: 1px;
+    width: 50em;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.galleryContainer {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 400px);
+    gap: 50px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-image {
+    width: 25em;
+    height: 20em;
+}
+
+.image-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+}
+
+.no-select {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.icon-toggled path {
+    fill: red;
+}
